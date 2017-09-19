@@ -14,23 +14,24 @@
 		<p></p>
 		<?php
 			$dbhost = 'localhost';
-			$dbuser = 'root';
-			$dbpass = '';
+			$dbuser = 'id2959258_username';
+			$dbpass = 'password';
+                        $dbase = 'id2947904_userinfo';
    
-			$conn = mysql_connect($dbhost, $dbuser, $dbpass);
+			$conn = new mysqli($dbhost, $dbuser, $dbpass, $dbase);
    
 			if(! $conn ) 
 			{
-				die('Could not connect: ' . mysql_error());
+				die('Could not connect: ' . $conn->error);
 			}
    
 			$sql = 'SELECT * FROM info ORDER BY date_time DESC';
-			mysql_select_db('userinfo');
-			$retval = mysql_query( $sql, $conn );
+			$conn->select_db('id2959258_userinfo');
+			$retval = $conn->query($sql);
    
 			if(! $retval ) 
 			{
-				die('Could not get data: ' . mysql_error());
+				die('Could not get data: ' . $conn->error);
 			}
 			
 			echo "<table border='1'>
@@ -46,7 +47,8 @@
 				<th>Date</th>
 			</tr>";
    
-			while($row = mysql_fetch_array($retval, MYSQL_ASSOC)) 
+			//while($row = mysql_fetch_array($retval, MYSQL_ASSOC)) 
+                        while($row = $retval->fetch_assoc())
 			{
 				echo "<tr>";
 					echo "<td>"	. $row['firstname'] . "</td>";
@@ -62,7 +64,7 @@
 			}
 			echo "</table>";
 			
-			mysql_close($conn);
+			//$conn->close;
 		?> 
 		<p></p>
 		<p>Fetched data successfully</p>

@@ -37,29 +37,30 @@
 			echo "Date: " . ($time) . "<br>";
 			
 			$dbhost = 'localhost';
-			$dbuser = 'root';
-			$dbpass = '';
+			$dbuser = 'id2959258_username';
+			$dbpass = 'password';
+                        $dbase = 'id2947904_userinfo';
    
-			$conn = mysql_connect($dbhost, $dbuser, $dbpass);
+			$conn = new mysqli($dbhost, $dbuser, $dbpass, $dbase);
    
 			if(! $conn ) 
 			{
-				die('Could not connect: ' . mysql_error());
+				die('Could not connect: ' . $conn->error);
 			}
 			
 			$sql = "INSERT INTO info (firstname, lastname, address1, address2, city, state, zip, country, date_time) 
 					VALUES ('$firstName', '$lastName', '$address1', '$address2', '$city', '$state', '$zip', '$country', '$time');";
-			mysql_select_db('userinfo');
-			if (mysql_query($sql) === TRUE) 
+			$conn->select_db('id2959258_userinfo');
+			if ($conn->query($sql) === TRUE) 
 			{
 				echo "<p></p>" . "New record created successfully";
 			} 
 			else 
 			{
-				echo "<p></p>" . "Error: " . $sql . "<br>" . mysql_error();
+				echo "<p></p>" . "Error: " . $sql . "<br>" . $conn->error;
 			}
 
-			mysql_close($conn);
+			$conn->close();
 		?>
 	</body>
 </html>
