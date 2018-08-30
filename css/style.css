@@ -43,6 +43,12 @@ img
 	text-align: center;
 }
 
+/**/
+#footing
+{
+	padding-left: 20px;
+}
+
 /*Format for header class*/
 .header
 {
@@ -82,9 +88,10 @@ img
 {
    color: white;
    background-color: gray;
-   text-align: center;
+   text-align: left;
    position: fixed;
    left: 0;
    bottom: 0;
+   padding-left: 20px;
    width: 100%;
 }
