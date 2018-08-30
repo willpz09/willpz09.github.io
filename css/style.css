@@ -1,0 +1,90 @@
+/*Make links look like regular text*/
+a
+{
+	color:inherit;
+	text-decoration: none;
+}
+
+/*Links change color and increase in size when hovered over*/
+a:hover
+{
+	color: Red;
+	background-color: rgba(255, 255, 255, 0.9);
+	font-size: 110%;
+	font-weight: bold;
+}
+
+/*No indent for lists*/
+ul, ol
+{
+	margin-left:0px;
+	padding-left:0px;
+}
+
+/*Remove bullet from list items*/
+li
+{
+	list-style-type: none;
+}
+
+/*Center images*/
+img
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+/*Center heading id's*/
+#heading
+{
+	text-align: center;
+}
+
+/*Format for header class*/
+.header
+{
+	color: white;
+	background-color: rgba(0, 0, 0, 0.75);
+	text-align: left;
+    position: static;
+    top: 50px;
+    left: 100px;
+	right: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+	margin: auto;
+	width: 75%;
+}
+
+/*Format for textblocks*/
+.textblock
+{
+	color: white;
+	background-color: rgba(0, 0, 0, 0.75);
+	text-align: left;
+    position: static;
+    top: 200px;
+    left: 100px;
+	right: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 100px;
+	margin: auto;
+	width: 75%;
+}
+
+/*Format for footer class*/
+.footer
+{
+   color: white;
+   background-color: gray;
+   text-align: center;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+}
