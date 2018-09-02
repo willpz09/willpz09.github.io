@@ -46,7 +46,8 @@ img
 /*Pad footing id's*/
 #footing
 {
-	padding-left: 20px;
+	text-align: right;
+	padding-right: 40px;
 }
 
 /*Format for header class*/
@@ -87,11 +88,16 @@ img
 .footer
 {
    color: white;
-   background-color: gray;
+   background-color: rgba(0, 0, 0, 0.75);
    text-align: left;
    position: fixed;
    left: 0;
    bottom: 0;
    padding-left: 20px;
+   padding-right: 20px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   margin-top: 5px;
+   margin-bottom: 5px;
    width: 100%;
 }
