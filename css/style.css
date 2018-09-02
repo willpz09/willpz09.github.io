@@ -101,3 +101,15 @@ img
    margin-bottom: 5px;
    width: 100%;
 }
+
+/*Float things to the left*/
+.alignleft
+{
+	float: left;
+}
+
+/*FLoat things to the right*/
+.alignright
+{
+	float: right;
+}
