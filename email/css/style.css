@@ -5,7 +5,7 @@ body
 
 input:valid
 {
-	color: black;
+	color: white;
 	font-weight: normal;
 }
 
@@ -17,6 +17,7 @@ input:invalid
 
 input[type=text], input[type=email], select, textarea
 {
+    background-color: rgba(0, 0, 0, .25);
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -44,6 +45,7 @@ input[type=submit]:hover
 
 textarea
 {
+	color: white;
 	height: 200px;
 }
 
