@@ -1,20 +1,24 @@
+/*Body style, Set font*/
 body
 {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+/*Style for valid input*/
 input:valid
 {
 	color: white;
 	font-weight: normal;
 }
 
+/*Style for invalid input*/
 input:invalid
 {
 	color: red;
 	font-weight: bold;
 }
 
+/*Style for inputs*/
 input[type=text], input[type=email], select, textarea
 {
     background-color: rgba(0, 0, 0, .25);
@@ -28,6 +32,7 @@ input[type=text], input[type=email], select, textarea
     resize: vertical;
 }
 
+/*Style for submit button*/
 input[type=submit]
 {
     background-color: #4CAF50;
@@ -38,25 +43,27 @@ input[type=submit]
     cursor: pointer;
 }
 
+/*Style for submit button when hovered over*/
 input[type=submit]:hover
 {
     background-color: #45a049;
 }
 
+/*Style for textarea input*/
 textarea
 {
 	color: white;
 	height: 200px;
 }
 
-/*Make links look like regular text*/
+/*Style for links*/
 a
 {
 	color:inherit;
 	text-decoration: none;
 }
 
-/*Links change color and increase in size when hovered over*/
+/*Style for links when hovered over*/
 a:hover
 {
 	color: Red;
@@ -65,20 +72,20 @@ a:hover
 	font-weight: bold;
 }
 
-/*No indent for lists*/
+/*Style for lists, No indent*/
 ul, ol
 {
 	margin-left:0px;
 	padding-left:0px;
 }
 
-/*Remove bullet from list items*/
+/*Style for list items, Remove bullet*/
 li
 {
 	list-style-type: none;
 }
 
-/*Center images*/
+/*Style for images, Center images*/
 img
 {
 	display: block;
@@ -88,20 +95,20 @@ img
 	height: auto;
 }
 
-/*Center heading id's*/
+/*Stye for heading id, Center heading*/
 #heading
 {
 	text-align: center;
 }
 
-/*Pad footing id's*/
+/*Style for footing id, Pad footing id's*/
 #footing
 {
 	text-align: right;
 	padding-right: 40px;
 }
 
-/*Format for header class*/
+/*Style for header class*/
 .header
 {
 	color: white;
@@ -117,7 +124,7 @@ img
 	width: 75%;
 }
 
-/*Format for textblock class*/
+/*Style for textblock class*/
 .textblock
 {
 	color: white;
@@ -135,7 +142,7 @@ img
 	width: 75%;
 }
 
-/*Format for footer class*/
+/*Style for footer class*/
 .footer
 {
    color: white;
@@ -153,13 +160,13 @@ img
    width: 100%;
 }
 
-/*Float things to the left*/
+/*Style for alignleft class, Float things to the left*/
 .alignleft
 {
 	float: left;
 }
 
-/*FLoat things to the right*/
+/*Style for alignright class, FLoat things to the right*/
 .alignright
 {
 	float: right;
