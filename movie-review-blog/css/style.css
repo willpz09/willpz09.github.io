@@ -1,4 +1,88 @@
-a
+.container
 {
-	
+	cursor: pointer;
+	display: inline-block;
+}
+
+.bar1, .bar2, .bar3
+{
+	background-color: #333;
+    height: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
+	width: 35px;
+}
+
+/*Rotate first bar*/
+.change .bar1
+{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/*Fade out the second bar*/
+.change .bar2
+{
+    opacity: 0;
+}
+
+/*Rotate last bar*/
+.change .bar3
+{
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.accordion
+{
+    background-color: #eee;
+	border: none;
+    color: #444;
+    cursor: pointer;
+	font-size: 15px;
+	font-weight: bold;
+	outline: none;
+    padding: 18px;
+    text-align: center;
+    transition: 0.4s;
+	width: 100%;
+}
+
+.active, .accordion:hover
+{
+    background-color: #ccc;
+}
+
+.accordion:after
+{
+	color: #777;
+    content: '\002B';
+    float: right;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.active:after
+{
+    content: "\2212";
+}
+
+.panel
+{
+	background-color: white;
+	margin: 5px;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 18px;
+    transition: max-height 0.2s ease-out;
+}
+
+.align-left
+{
+	float: left;
+}
+
+.align-right
+{
+	float: right;
 }
