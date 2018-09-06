@@ -71,6 +71,34 @@ body
     margin-bottom:0px;
 }
 
+.post
+{
+	background-color: rgba(0, 0, 0, 0.75);
+	color: white;
+    left: 100px;
+	margin: auto;
+	margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: static;
+	right: 100px;
+	text-align: left;
+    top: 200px;
+	width: 75%;
+}
+
+.align-left
+{
+	float:left;
+}
+
+.align-right
+{
+	float: right;
+}
+
 #main
 {
 	padding: 16px;
