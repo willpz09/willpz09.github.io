@@ -91,7 +91,8 @@ body
 
 .align-left
 {
-	float:left;
+	/*float:left;*/
+	font-size: 10px;
 }
 
 .align-right
