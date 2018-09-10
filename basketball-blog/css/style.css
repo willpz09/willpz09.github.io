@@ -70,6 +70,12 @@ img
 	width: 100%;
 }
 
+.overlay
+{
+	position: absolute;
+	top: 50px;
+}
+
 .hamburger-icon
 {
 	cursor: pointer;
