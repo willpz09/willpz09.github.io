@@ -9,6 +9,7 @@
 	background-color: #333;
     height: 5px;
     margin: 6px 0;
+	transform: scale(.75);
     transition: 0.4s;
 	width: 35px;
 }
