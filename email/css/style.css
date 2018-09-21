@@ -163,7 +163,7 @@ img
    color: white;
    background-color: rgba(0, 0, 0, 0.75);
    text-align: left;
-   position: sticky;
+   position: fixed;
    left: 0;
    bottom: 0;
    padding-left: 20px;
