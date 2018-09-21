@@ -87,3 +87,21 @@
 {
 	float: right;
 }
+
+.footer
+{
+	background-color: #ccc;
+	bottom: 0;
+	color: white;
+	left: 0;
+	position: sticky;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.footer p
+{
+	padding-bottom: 75px;
+	padding-top: 75px;
+}
