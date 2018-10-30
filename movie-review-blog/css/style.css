@@ -110,3 +110,50 @@
 {
 	text-align: center;
 }
+
+#main
+{
+	padding: 16px;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+    transition: margin-left .5s;
+}
+
+.sidenav
+{
+    background-color: #111;
+	height: 100%;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+	position: fixed;
+	top: 0;
+	transition: 0.5s;
+	width: 0;
+    z-index: 1;
+}
+
+.sidenav a
+{
+    color: #818181;
+    display: block;
+	font-size: 25px;
+	padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sidenav a:hover
+{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn
+{
+	font-size: 36px;
+    margin-left: 50px;
+    position: absolute;
+    right: 25px;
+	top: 0;
+}
