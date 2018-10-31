@@ -1,3 +1,12 @@
+#main
+{
+	padding: 16px;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+    transition: margin-left .5s;
+}
+
 .container
 {
 	cursor: pointer;
@@ -17,8 +26,8 @@
 /*Rotate first bar*/
 .change .bar1
 {
-    -webkit-transform: rotate(-45deg) translate(-8px, 3px) ;
-    transform: rotate(-45deg) translate(-8px, 3px) ;
+    -webkit-transform: rotate(-45deg) translate(-8px, 3px);
+    transform: rotate(-45deg) translate(-8px, 3px);
 }
 
 /*Fade out the second bar*/
@@ -30,8 +39,37 @@
 /*Rotate last bar*/
 .change .bar3
 {
-    -webkit-transform: rotate(45deg) translate(-8px, -7px) ;
-    transform: rotate(45deg) translate(-8px, -7px) ;
+    -webkit-transform: rotate(45deg) translate(-8px, -7px);
+    transform: rotate(45deg) translate(-8px, -7px);
+}
+
+.sidenav
+{
+    background-color: #111;
+	height: 100%;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+	position: fixed;
+	top: 0;
+	transition: 0.5s;
+	width: 0;
+    z-index: 1;
+}
+
+.sidenav a
+{
+    color: #818181;
+    display: block;
+	font-size: 25px;
+	padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sidenav a:hover
+{
+    color: #f1f1f1;
 }
 
 .accordion
@@ -88,72 +126,172 @@
 	float: right;
 }
 
+.rating
+{
+	text-align: center;
+}
+
 .footer
 {
-	background-color: #ccc;
+	background-color: #eee;
 	bottom: 0;
 	color: white;
 	left: 0;
+	padding-bottom: 10px;
+	padding-top: 10px;
 	position: sticky;
 	text-align: center;
 	vertical-align: middle;
 	width: 100%;
 }
 
-.footer p
+.home-icon
 {
-	padding-bottom: 50px;
-	padding-top: 50px;
+	height: 30px;
+	padding-left: 50px;
+	padding-right: 50px;
+	width: 30px;
 }
 
-.rating
+.home-icon:hover
 {
-	text-align: center;
+	opacity: 0.7;
 }
 
-#main
+/*Style all font awesome icons*/
+.fa
 {
-	padding: 16px;
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0px;
-    transition: margin-left .5s;
-}
-
-.sidenav
-{
-    background-color: #111;
-	height: 100%;
-    left: 0;
-    overflow-x: hidden;
-    padding-top: 60px;
-	position: fixed;
-	top: 0;
-	transition: 0.5s;
-	width: 0;
-    z-index: 1;
-}
-
-.sidenav a
-{
-    color: #818181;
-    display: block;
-	font-size: 25px;
-	padding: 8px 8px 8px 32px;
+	font-size: 5px;
+	height: 15px;
+    padding: 5px;
+    text-align: center;
     text-decoration: none;
-    transition: 0.3s;
+    width: 15px;
 }
 
-.sidenav a:hover
+/*Added hover effect*/
+.fa:hover
 {
-    color: #f1f1f1;
+    opacity: 0.7;
 }
 
-.sidenav .closebtn
+.fa-facebook
 {
-	font-size: 36px;
-    margin-left: 50px;
-    position: absolute;
-    right: 25px;
-	top: 0;
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter
+{
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google
+{
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin
+{
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube
+{
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram
+{
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest
+{
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost
+{
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype
+{
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android
+{
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble
+{
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo
+{
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr
+{
+  background: #2c4762;
+  color: white;
+}
+
+.fa-foursquare
+{
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon
+{
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr
+{
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo
+{
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud
+{
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit
+{
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss
+{
+  background: #ff6600;
+  color: white;
 }
